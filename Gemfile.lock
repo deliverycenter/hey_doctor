@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hey_doctor (1.2.1)
+    hey_doctor (1.2.2)
       mimemagic (= 0.3.7)
       rails (>= 4.2.10)
 
@@ -93,7 +93,7 @@ GEM
     method_source (1.0.0)
     mimemagic (0.3.7)
       nokogiri (~> 1.11.2)
-    mini_mime (1.0.2)
+    mini_mime (1.1.0)
     mini_portile2 (2.5.0)
     minitest (5.14.4)
     nio4r (2.5.7)
@@ -211,4 +211,4 @@ DEPENDENCIES
   simplecov
 
 BUNDLED WITH
-   2.2.16
+   2.2.17

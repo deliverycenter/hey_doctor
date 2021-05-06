@@ -97,16 +97,12 @@ Minimum coverage is set to 95%.
 Change the tag in `lib/hey_doctor/version.rb` each release using [SEMVER](https://semver.org/lang/pt-BR/).
 
 ```bash
-# After merging the PR checkout to master branch and update it.
-git checkout master
-git pull
-
-# build gem in pkg/hey_doctor-TAG.gem (Also changes Gemfile.lock)
+# before merging the PR build gem in pkg/hey_doctor-TAG.gem (Also changes Gemfile.lock)
 bundle exec rake build
 
 # Add the changed files
 git add Gemfile.lock lib/hey_doctor/version.rb
-git commit -m "v0.0.0"
+git commit -m "Updated gem v0.0.0."
 
 # Create a new git tag
 git tag -a v0.0.0 -m "Description here."

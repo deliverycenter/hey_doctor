@@ -30,6 +30,7 @@ class HeyDoctor::CheckApplicationHealthService
       port = ENV['RAILS_PORT'] || ENV['PORT']
 
       Net::HTTP.start('localhost', port) do |http|
+        http.use_ssl = true if port.to_i == 443
         http.head('/_ah/app_health')
       end.code
     end
